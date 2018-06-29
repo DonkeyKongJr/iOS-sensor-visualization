@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -36,25 +37,14 @@ class ViewController: UIViewController {
     func makeRestCall(){
         let url = URL(string: "http://192.168.1.43:3000/sensordata")
         
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+        Alamofire.request(url!,method: .post).responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
             
-            if let data = data {
-                do {
-                    // Convert the data to JSON
-                    let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
-                    
-                    if let json = jsonSerialized, let url = json["url"], let explanation = json["explanation"] {
-                        print(url)
-                        print(explanation)
-                    }
-                }  catch let error as NSError {
-                    print(error.localizedDescription)
-                }
-            } else if let error = error {
-                print(error.localizedDescription)
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
             }
-        }
-        
-        task.resume()
     }
+}
 }
