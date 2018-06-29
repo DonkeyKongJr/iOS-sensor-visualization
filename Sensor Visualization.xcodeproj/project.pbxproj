@@ -17,6 +17,7 @@
 		CD33BED220E6C34D00721659 /* Sensor_VisualizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */; };
 		CD33BEE020E6CA2A00721659 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEDF20E6CA2A00721659 /* Podfile */; };
 		CDD9724220E6CD56009841B1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9724120E6CD56009841B1 /* Alamofire.framework */; };
+		CDD9724420E6CFF9009841B1 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9724320E6CFF9009841B1 /* SensorData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CD33BED320E6C34D00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD33BEDF20E6CA2A00721659 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDD9724120E6CD56009841B1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD9724320E6CFF9009841B1 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		EAF356FFB5D9E8E84CBDA851 /* Pods-Sensor Visualization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sensor Visualization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 				CD33BEB820E6C34C00721659 /* Assets.xcassets */,
 				CD33BEBA20E6C34C00721659 /* LaunchScreen.storyboard */,
 				CD33BEBD20E6C34C00721659 /* Info.plist */,
+				CDD9724320E6CFF9009841B1 /* SensorData.swift */,
 			);
 			path = "Sensor Visualization";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				CD33BEB420E6C34B00721659 /* ViewController.swift in Sources */,
 				CD33BEB220E6C34B00721659 /* AppDelegate.swift in Sources */,
+				CDD9724420E6CFF9009841B1 /* SensorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

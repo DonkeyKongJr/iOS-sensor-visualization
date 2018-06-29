@@ -29,22 +29,18 @@ class ViewController: UIViewController {
     }
     
     func refreshSensorData(){
-        self.temperatureLabel.text = "Refresh Temp"
-        self.humidityLabel.text = "Refresh Humidity"
         makeRestCall();
     }
     
     func makeRestCall(){
         let url = URL(string: "http://192.168.1.43:3000/sensordata")
         
-        Alamofire.request(url!,method: .post).responseJSON { response in
-            print("Request: \(String(describing: response.request))")   // original url request
-            print("Response: \(String(describing: response.response))") // http url response
-            print("Result: \(response.result)")                         // response serialization result
-            
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
-            }
+        Alamofire.request(url!,method: .post).responseJSON { (responseData) -> Void in
+                if((responseData.result.value) != nil) {
+                    let response = responseData.result.value as! NSDictionary
+                    self.humidityLabel.text = String(format: "%@", response["humidity"] as! NSNumber)
+                    self.temperatureLabel.text = String(format: "%@", response["temp"] as! NSNumber)
+        }
     }
 }
 }
