@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD33BEB220E6C34B00721659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEB120E6C34B00721659 /* AppDelegate.swift */; };
+		CD33BEB420E6C34B00721659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEB320E6C34B00721659 /* ViewController.swift */; };
+		CD33BEB720E6C34B00721659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEB520E6C34B00721659 /* Main.storyboard */; };
+		CD33BEB920E6C34C00721659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEB820E6C34C00721659 /* Assets.xcassets */; };
+		CD33BEBC20E6C34C00721659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEBA20E6C34C00721659 /* LaunchScreen.storyboard */; };
+		CD33BEC720E6C34C00721659 /* Sensor_VisualizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEC620E6C34C00721659 /* Sensor_VisualizationTests.swift */; };
+		CD33BED220E6C34D00721659 /* Sensor_VisualizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD33BEC320E6C34C00721659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD33BEA620E6C34B00721659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD33BEAD20E6C34B00721659;
+			remoteInfo = "Sensor Visualization";
+		};
+		CD33BECE20E6C34D00721659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD33BEA620E6C34B00721659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD33BEAD20E6C34B00721659;
+			remoteInfo = "Sensor Visualization";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD33BEAE20E6C34B00721659 /* Sensor Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sensor Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33BEB120E6C34B00721659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD33BEB320E6C34B00721659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD33BEB620E6C34B00721659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD33BEB820E6C34C00721659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD33BEBB20E6C34C00721659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD33BEBD20E6C34C00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33BEC220E6C34C00721659 /* Sensor VisualizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sensor VisualizationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33BEC620E6C34C00721659 /* Sensor_VisualizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor_VisualizationTests.swift; sourceTree = "<group>"; };
+		CD33BEC820E6C34C00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33BECD20E6C34D00721659 /* Sensor VisualizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sensor VisualizationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor_VisualizationUITests.swift; sourceTree = "<group>"; };
+		CD33BED320E6C34D00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD33BEAB20E6C34B00721659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BEBF20E6C34C00721659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BECA20E6C34D00721659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD33BEA520E6C34B00721659 = {
+			isa = PBXGroup;
+			children = (
+				CD33BEB020E6C34B00721659 /* Sensor Visualization */,
+				CD33BEC520E6C34C00721659 /* Sensor VisualizationTests */,
+				CD33BED020E6C34D00721659 /* Sensor VisualizationUITests */,
+				CD33BEAF20E6C34B00721659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD33BEAF20E6C34B00721659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD33BEAE20E6C34B00721659 /* Sensor Visualization.app */,
+				CD33BEC220E6C34C00721659 /* Sensor VisualizationTests.xctest */,
+				CD33BECD20E6C34D00721659 /* Sensor VisualizationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD33BEB020E6C34B00721659 /* Sensor Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				CD33BEB120E6C34B00721659 /* AppDelegate.swift */,
+				CD33BEB320E6C34B00721659 /* ViewController.swift */,
+				CD33BEB520E6C34B00721659 /* Main.storyboard */,
+				CD33BEB820E6C34C00721659 /* Assets.xcassets */,
+				CD33BEBA20E6C34C00721659 /* LaunchScreen.storyboard */,
+				CD33BEBD20E6C34C00721659 /* Info.plist */,
+			);
+			path = "Sensor Visualization";
+			sourceTree = "<group>";
+		};
+		CD33BEC520E6C34C00721659 /* Sensor VisualizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD33BEC620E6C34C00721659 /* Sensor_VisualizationTests.swift */,
+				CD33BEC820E6C34C00721659 /* Info.plist */,
+			);
+			path = "Sensor VisualizationTests";
+			sourceTree = "<group>";
+		};
+		CD33BED020E6C34D00721659 /* Sensor VisualizationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */,
+				CD33BED320E6C34D00721659 /* Info.plist */,
+			);
+			path = "Sensor VisualizationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD33BEAD20E6C34B00721659 /* Sensor Visualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33BED620E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor Visualization" */;
+			buildPhases = (
+				CD33BEAA20E6C34B00721659 /* Sources */,
+				CD33BEAB20E6C34B00721659 /* Frameworks */,
+				CD33BEAC20E6C34B00721659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sensor Visualization";
+			productName = "Sensor Visualization";
+			productReference = CD33BEAE20E6C34B00721659 /* Sensor Visualization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD33BEC120E6C34C00721659 /* Sensor VisualizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33BED920E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor VisualizationTests" */;
+			buildPhases = (
+				CD33BEBE20E6C34C00721659 /* Sources */,
+				CD33BEBF20E6C34C00721659 /* Frameworks */,
+				CD33BEC020E6C34C00721659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD33BEC420E6C34C00721659 /* PBXTargetDependency */,
+			);
+			name = "Sensor VisualizationTests";
+			productName = "Sensor VisualizationTests";
+			productReference = CD33BEC220E6C34C00721659 /* Sensor VisualizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD33BECC20E6C34D00721659 /* Sensor VisualizationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33BEDC20E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor VisualizationUITests" */;
+			buildPhases = (
+				CD33BEC920E6C34D00721659 /* Sources */,
+				CD33BECA20E6C34D00721659 /* Frameworks */,
+				CD33BECB20E6C34D00721659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD33BECF20E6C34D00721659 /* PBXTargetDependency */,
+			);
+			name = "Sensor VisualizationUITests";
+			productName = "Sensor VisualizationUITests";
+			productReference = CD33BECD20E6C34D00721659 /* Sensor VisualizationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD33BEA620E6C34B00721659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Patrick Schadler";
+				TargetAttributes = {
+					CD33BEAD20E6C34B00721659 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CD33BEC120E6C34C00721659 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD33BEAD20E6C34B00721659;
+					};
+					CD33BECC20E6C34D00721659 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD33BEAD20E6C34B00721659;
+					};
+				};
+			};
+			buildConfigurationList = CD33BEA920E6C34B00721659 /* Build configuration list for PBXProject "Sensor Visualization" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD33BEA520E6C34B00721659;
+			productRefGroup = CD33BEAF20E6C34B00721659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD33BEAD20E6C34B00721659 /* Sensor Visualization */,
+				CD33BEC120E6C34C00721659 /* Sensor VisualizationTests */,
+				CD33BECC20E6C34D00721659 /* Sensor VisualizationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD33BEAC20E6C34B00721659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33BEBC20E6C34C00721659 /* LaunchScreen.storyboard in Resources */,
+				CD33BEB920E6C34C00721659 /* Assets.xcassets in Resources */,
+				CD33BEB720E6C34B00721659 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BEC020E6C34C00721659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BECB20E6C34D00721659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD33BEAA20E6C34B00721659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33BEB420E6C34B00721659 /* ViewController.swift in Sources */,
+				CD33BEB220E6C34B00721659 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BEBE20E6C34C00721659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33BEC720E6C34C00721659 /* Sensor_VisualizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD33BEC920E6C34D00721659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD33BED220E6C34D00721659 /* Sensor_VisualizationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD33BEC420E6C34C00721659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD33BEAD20E6C34B00721659 /* Sensor Visualization */;
+			targetProxy = CD33BEC320E6C34C00721659 /* PBXContainerItemProxy */;
+		};
+		CD33BECF20E6C34D00721659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD33BEAD20E6C34B00721659 /* Sensor Visualization */;
+			targetProxy = CD33BECE20E6C34D00721659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD33BEB520E6C34B00721659 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD33BEB620E6C34B00721659 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD33BEBA20E6C34C00721659 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD33BEBB20E6C34C00721659 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD33BED420E6C34D00721659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD33BED520E6C34D00721659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD33BED720E6C34D00721659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor Visualization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-Visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD33BED820E6C34D00721659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor Visualization/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-Visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD33BEDA20E6C34D00721659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor VisualizationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-VisualizationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sensor Visualization.app/Sensor Visualization";
+			};
+			name = Debug;
+		};
+		CD33BEDB20E6C34D00721659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor VisualizationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-VisualizationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sensor Visualization.app/Sensor Visualization";
+			};
+			name = Release;
+		};
+		CD33BEDD20E6C34D00721659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor VisualizationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-VisualizationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sensor Visualization";
+			};
+			name = Debug;
+		};
+		CD33BEDE20E6C34D00721659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sensor VisualizationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.donkeykongjr.Sensor-VisualizationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sensor Visualization";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD33BEA920E6C34B00721659 /* Build configuration list for PBXProject "Sensor Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33BED420E6C34D00721659 /* Debug */,
+				CD33BED520E6C34D00721659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33BED620E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33BED720E6C34D00721659 /* Debug */,
+				CD33BED820E6C34D00721659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33BED920E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor VisualizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33BEDA20E6C34D00721659 /* Debug */,
+				CD33BEDB20E6C34D00721659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33BEDC20E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor VisualizationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33BEDD20E6C34D00721659 /* Debug */,
+				CD33BEDE20E6C34D00721659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD33BEA620E6C34B00721659 /* Project object */;
+}
