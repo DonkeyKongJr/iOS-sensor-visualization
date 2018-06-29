@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55F18B419AA69C35DBEE487 /* Pods_Sensor_Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76032D39FB0A1CAB1740646F /* Pods_Sensor_Visualization.framework */; };
 		CD33BEB220E6C34B00721659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEB120E6C34B00721659 /* AppDelegate.swift */; };
 		CD33BEB420E6C34B00721659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEB320E6C34B00721659 /* ViewController.swift */; };
 		CD33BEB720E6C34B00721659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEB520E6C34B00721659 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B599762423787718B9C0CAC /* Pods-Sensor Visualization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sensor Visualization.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization.release.xcconfig"; sourceTree = "<group>"; };
+		76032D39FB0A1CAB1740646F /* Pods_Sensor_Visualization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sensor_Visualization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD33BEAE20E6C34B00721659 /* Sensor Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sensor Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD33BEB120E6C34B00721659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD33BEB320E6C34B00721659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor_VisualizationUITests.swift; sourceTree = "<group>"; };
 		CD33BED320E6C34D00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD33BEDF20E6CA2A00721659 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EAF356FFB5D9E8E84CBDA851 /* Pods-Sensor Visualization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sensor Visualization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55F18B419AA69C35DBEE487 /* Pods_Sensor_Visualization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96378645B87BEACBDE96BA4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76032D39FB0A1CAB1740646F /* Pods_Sensor_Visualization.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98D6E28A8ADF7B651EC69882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAF356FFB5D9E8E84CBDA851 /* Pods-Sensor Visualization.debug.xcconfig */,
+				6B599762423787718B9C0CAC /* Pods-Sensor Visualization.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD33BEA520E6C34B00721659 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,8 @@
 				CD33BEC520E6C34C00721659 /* Sensor VisualizationTests */,
 				CD33BED020E6C34D00721659 /* Sensor VisualizationUITests */,
 				CD33BEAF20E6C34B00721659 /* Products */,
+				98D6E28A8ADF7B651EC69882 /* Pods */,
+				96378645B87BEACBDE96BA4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD33BED620E6C34D00721659 /* Build configuration list for PBXNativeTarget "Sensor Visualization" */;
 			buildPhases = (
+				6F8D4859AD1138FC894F883F /* [CP] Check Pods Manifest.lock */,
 				CD33BEAA20E6C34B00721659 /* Sources */,
 				CD33BEAB20E6C34B00721659 /* Frameworks */,
 				CD33BEAC20E6C34B00721659 /* Resources */,
+				027F43A352205B7608D3C7CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +280,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		027F43A352205B7608D3C7CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F8D4859AD1138FC894F883F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sensor Visualization-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD33BEAA20E6C34B00721659 /* Sources */ = {
@@ -432,6 +497,7 @@
 		};
 		CD33BED720E6C34D00721659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF356FFB5D9E8E84CBDA851 /* Pods-Sensor Visualization.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +515,7 @@
 		};
 		CD33BED820E6C34D00721659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B599762423787718B9C0CAC /* Pods-Sensor Visualization.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
