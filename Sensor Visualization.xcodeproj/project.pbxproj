@@ -14,6 +14,7 @@
 		CD33BEBC20E6C34C00721659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEBA20E6C34C00721659 /* LaunchScreen.storyboard */; };
 		CD33BEC720E6C34C00721659 /* Sensor_VisualizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BEC620E6C34C00721659 /* Sensor_VisualizationTests.swift */; };
 		CD33BED220E6C34D00721659 /* Sensor_VisualizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */; };
+		CD33BEE020E6CA2A00721659 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEDF20E6CA2A00721659 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CD33BECD20E6C34D00721659 /* Sensor VisualizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sensor VisualizationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor_VisualizationUITests.swift; sourceTree = "<group>"; };
 		CD33BED320E6C34D00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD33BEDF20E6CA2A00721659 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		CD33BEA520E6C34B00721659 = {
 			isa = PBXGroup;
 			children = (
+				CD33BEDF20E6CA2A00721659 /* Podfile */,
 				CD33BEB020E6C34B00721659 /* Sensor Visualization */,
 				CD33BEC520E6C34C00721659 /* Sensor VisualizationTests */,
 				CD33BED020E6C34D00721659 /* Sensor VisualizationUITests */,
@@ -231,6 +234,7 @@
 			files = (
 				CD33BEBC20E6C34C00721659 /* LaunchScreen.storyboard in Resources */,
 				CD33BEB920E6C34C00721659 /* Assets.xcassets in Resources */,
+				CD33BEE020E6CA2A00721659 /* Podfile in Resources */,
 				CD33BEB720E6C34B00721659 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
