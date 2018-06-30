@@ -13,10 +13,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.makeRestCall();
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,9 +40,20 @@ class ViewController: UIViewController {
         Alamofire.request(url!,method: .post).responseJSON { (responseData) -> Void in
                 if((responseData.result.value) != nil) {
                     let response = responseData.result.value as! NSDictionary
-                    self.humidityLabel.text = String(format: "%@", response["humidity"] as! NSNumber)
-                    self.temperatureLabel.text = String(format: "%@", response["temp"] as! NSNumber)
+              
+                    self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber) + " %";
+                    self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber) + " °C";
+                    self.timestampLabel.text = response["timestamp"] as! String;
+            }
         }
     }
-}
+    
+    func getFormattedValue(number: NSNumber) -> String{
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        formatter.roundingMode = .up
+        
+        return String(describing: formatter.string(from: number)!)
+    }
 }
