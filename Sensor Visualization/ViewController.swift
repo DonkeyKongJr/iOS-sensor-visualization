@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
               
                     self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber) + " %";
                     self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber) + " °C";
+                    self.timestampLabel.text = response["timestamp"] as! String;
             }
         }
     }
