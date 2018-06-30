@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.makeRestCall();
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,8 +40,8 @@ class ViewController: UIViewController {
                 if((responseData.result.value) != nil) {
                     let response = responseData.result.value as! NSDictionary
               
-                    self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber)
-                    self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber)
+                    self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber) + " %";
+                    self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber) + " °C";
             }
         }
     }
