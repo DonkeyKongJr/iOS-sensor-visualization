@@ -43,7 +43,7 @@ class ViewController: UIViewController {
               
                     self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber) + " %";
                     self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber) + " °C";
-                    self.timestampLabel.text = response["timestamp"] as! String;
+                    self.timestampLabel.text = self.UTCToLocal(date: response["timestamp"] as! String)
             }
         }
     }
@@ -55,5 +55,17 @@ class ViewController: UIViewController {
         formatter.roundingMode = .up
         
         return String(describing: formatter.string(from: number)!)
+    }
+    
+    func UTCToLocal(date:String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        
+        let dt = dateFormatter.date(from: date)
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.dateFormat = "hh:mm:ss a"
+        
+        return dateFormatter.string(from: dt!)
     }
 }
