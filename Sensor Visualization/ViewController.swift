@@ -41,14 +41,28 @@ class ViewController: UIViewController {
                 if((responseData.result.value) != nil) {
                     let response = responseData.result.value as! NSDictionary
               
-                    self.humidityLabel.text = self.getFormattedValue(number: response["humidity"] as! NSNumber) + " %";
-                    self.temperatureLabel.text = self.getFormattedValue(number: response["temp"] as! NSNumber) + " °C";
-                    self.timestampLabel.text = self.UTCToLocal(date: response["timestamp"] as! String)
+                    if(self.checkJsonResponse(data: response)){
+                        self.setLabelData(data: response)
+                    }
             }
         }
     }
     
-    func getFormattedValue(number: NSNumber) -> String{
+    func setLabelData(data: NSDictionary){
+        self.humidityLabel.text = self.getFormattedValue(number: data["humidity"] as! NSNumber) + " %";
+        self.temperatureLabel.text = self.getFormattedValue(number: data["temp"] as! NSNumber) + " °C";
+        self.timestampLabel.text = self.UTCToLocal(date: data["timestamp"] as! String)
+    }
+    
+    func checkJsonResponse(data: NSDictionary) -> Bool{
+        if (data["humidity"] == nil || data["temp"] == nil || data["timestamp"] == nil ) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func getFormattedValue(number: NSNumber) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 2
