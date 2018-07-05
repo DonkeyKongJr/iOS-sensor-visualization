@@ -12,9 +12,15 @@ import SwiftChart
 class SensorDataChartController: UIViewController {
     @IBOutlet weak var lineChart: Chart!
     
+    @IBAction func backButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+
         let series = ChartSeries([0, 6.5, 2, 8, 4.1, 7, -3.1, 10, 8])
         lineChart.add(series)
     }

@@ -76,7 +76,7 @@
                                 <state key="normal" title="Show Chart"/>
                                 <connections>
                                     <action selector="refreshDataButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaq-dw-1Tf"/>
-                                    <segue destination="JnX-1k-HAx" kind="showDetail" id="DTG-lg-ZDh"/>
+                                    <segue destination="JnX-1k-HAx" kind="show" id="DTG-lg-ZDh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+            <point key="canvasLocation" x="-553" y="-381"/>
         </scene>
         <!--Sensor Data Chart Controller-->
         <scene sceneID="y7D-jW-gGY">
@@ -101,11 +101,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cct-uj-T2c" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="24" y="200" width="335" height="161"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cct-uj-T2c" userLabel="Te" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="24" y="200" width="335" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0x-Fa-qfo">
+                                <rect key="frame" x="97" y="96" width="172" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiA-Gf-5Lf">
+                                <rect key="frame" x="121" y="488" width="148" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="JnX-1k-HAx" eventType="touchUpInside" id="pKm-aL-lgD"/>
+                                    <action selector="refreshDataButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pev-NT-eTI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jY3-cJ-meO"/>
@@ -116,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4q-4b-Rs3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.20000000000005" y="29.23538230884558"/>
+            <point key="canvasLocation" x="391.19999999999999" y="-381.85907046476763"/>
         </scene>
     </scenes>
 </document>
