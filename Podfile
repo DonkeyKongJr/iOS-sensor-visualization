@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'Sensor Visualization' do
 pod 'Alamofire', '~> 4.7'
+pod 'SwiftChart'
 end

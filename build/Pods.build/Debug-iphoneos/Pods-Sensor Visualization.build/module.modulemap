@@ -1,0 +1,6 @@
+framework module Pods_Sensor_Visualization {
+  umbrella header "Pods-Sensor Visualization-umbrella.h"
+
+  export *
+  module * { export * }
+}
