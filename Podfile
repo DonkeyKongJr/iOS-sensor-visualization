@@ -6,4 +6,5 @@ target 'Sensor Visualization' do
 pod 'Alamofire', '~> 4.7'
 pod 'SwiftChart'
 pod 'Firebase/Core'
+pod 'Firebase/Firestore'
 end
