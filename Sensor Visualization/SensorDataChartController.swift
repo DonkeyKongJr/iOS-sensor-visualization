@@ -9,6 +9,7 @@
 import UIKit
 import SwiftChart
 import Firebase
+import FirebaseFirestore
 
 class SensorDataChartController: UIViewController {
     @IBOutlet weak var lineChart: Chart!
@@ -33,6 +34,15 @@ class SensorDataChartController: UIViewController {
    
     func getDataFromFirestore(){
         let db = Firestore.firestore()
-        let documents = db.collection("sensordata").getDocuments();
+        
+        db.collection("sensordata").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
     }
 }
