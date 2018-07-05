@@ -17,6 +17,7 @@
 		CD33BED220E6C34D00721659 /* Sensor_VisualizationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD33BED120E6C34D00721659 /* Sensor_VisualizationUITests.swift */; };
 		CD33BEE020E6CA2A00721659 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CD33BEDF20E6CA2A00721659 /* Podfile */; };
 		CDA37A8620EEB01F00CBE301 /* SensorDataChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37A8520EEB01F00CBE301 /* SensorDataChartController.swift */; };
+		CDA37A8A20EEB9DA00CBE301 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA37A8920EEB9D900CBE301 /* GoogleService-Info.plist */; };
 		CDD9724220E6CD56009841B1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9724120E6CD56009841B1 /* Alamofire.framework */; };
 		CDD9724420E6CFF9009841B1 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9724320E6CFF9009841B1 /* SensorData.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		CD33BED320E6C34D00721659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD33BEDF20E6CA2A00721659 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDA37A8520EEB01F00CBE301 /* SensorDataChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataChartController.swift; sourceTree = "<group>"; };
+		CDA37A8920EEB9D900CBE301 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDD9724120E6CD56009841B1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9724320E6CFF9009841B1 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		EAF356FFB5D9E8E84CBDA851 /* Pods-Sensor Visualization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sensor Visualization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		CD33BEB020E6C34B00721659 /* Sensor Visualization */ = {
 			isa = PBXGroup;
 			children = (
+				CDA37A8920EEB9D900CBE301 /* GoogleService-Info.plist */,
 				CD33BEB120E6C34B00721659 /* AppDelegate.swift */,
 				CD33BEB320E6C34B00721659 /* ViewController.swift */,
 				CD33BEB520E6C34B00721659 /* Main.storyboard */,
@@ -270,6 +273,7 @@
 			files = (
 				CD33BEBC20E6C34C00721659 /* LaunchScreen.storyboard in Resources */,
 				CD33BEB920E6C34C00721659 /* Assets.xcassets in Resources */,
+				CDA37A8A20EEB9DA00CBE301 /* GoogleService-Info.plist in Resources */,
 				CD33BEE020E6CA2A00721659 /* Podfile in Resources */,
 				CD33BEB720E6C34B00721659 /* Main.storyboard in Resources */,
 			);
@@ -300,12 +304,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sensor Visualization/Pods-Sensor Visualization-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
