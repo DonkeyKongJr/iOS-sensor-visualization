@@ -22,9 +22,8 @@ class SensorDataChartController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.lineChart.minY = 0
-         self.lineChart.maxY = 40
+        self.lineChart.maxY = 40
         self.getDataFromFirestore();
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +31,6 @@ class SensorDataChartController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-   
     func getDataFromFirestore(){
         let db = Firestore.firestore()
         var temperatures = [Double]()
@@ -44,7 +42,7 @@ class SensorDataChartController: UIViewController {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                     
-                    let data = document.data() as! NSDictionary
+                    let data = document.data() as NSDictionary
                     temperatures.append(data["temperature"] as! Double)
                 }
                 let series = ChartSeries(temperatures)
