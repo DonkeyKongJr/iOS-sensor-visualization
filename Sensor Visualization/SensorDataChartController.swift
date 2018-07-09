@@ -43,7 +43,7 @@ class SensorDataChartController: UIViewController {
         var temperatures = [Double]()
         var humidities = [Double]()
         
-        db.collection("sensordata").getDocuments() { (querySnapshot, err) in
+        db.collection("sensordata").order(by: "timestamp", descending: true).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
