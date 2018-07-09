@@ -12,9 +12,10 @@ import Firebase
 import FirebaseFirestore
 
 class SensorDataChartController: UIViewController {
+    
     @IBOutlet weak var lineChart: Chart!
     @IBOutlet weak var humidityChart: Chart!
-    
+    var db : Firestore!
     @IBAction func backButton(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
@@ -22,6 +23,7 @@ class SensorDataChartController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.initFirestore()
         self.setChartMetaData()
         self.getDataFromFirestore()
     }
@@ -38,7 +40,7 @@ class SensorDataChartController: UIViewController {
         self.humidityChart.maxY = 100;
     }
 
-    func getDataFromFirestore(){
+    func getDataFromFirestore() {
         let db = Firestore.firestore()
         var temperatures = [Double]()
         var humidities = [Double]()
@@ -68,5 +70,12 @@ class SensorDataChartController: UIViewController {
                 self.humidityChart.xLabelsFormatter = { String(Int(round($1)))}
             }
         }
+    }
+    
+    private func initFirestore(){
+        db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
     }
 }
