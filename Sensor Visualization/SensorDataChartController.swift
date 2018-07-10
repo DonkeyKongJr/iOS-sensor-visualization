@@ -12,17 +12,13 @@ import Firebase
 import FirebaseFirestore
 
 class SensorDataChartController: UIViewController {
-    
+    var db : Firestore!
     @IBOutlet weak var lineChart: Chart!
     @IBOutlet weak var humidityChart: Chart!
-    var db : Firestore!
-    @IBAction func backButton(_ sender: UIButton) {
-        self.dismiss(animated: true)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.addNavigationBar()
         self.initFirestore()
         self.setChartMetaData()
         self.getDataFromFirestore()
@@ -30,7 +26,6 @@ class SensorDataChartController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setChartMetaData(){
@@ -70,6 +65,29 @@ class SensorDataChartController: UIViewController {
                 self.humidityChart.xLabelsFormatter = { String(Int(round($1)))}
             }
         }
+    }
+    
+    private func addNavigationBar(){
+        let height: CGFloat = 75
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height;
+        let navbar = UINavigationBar(frame: CGRect(x: 0, y: statusBarHeight, width: UIScreen.main.bounds.width, height: height))
+        navbar.backgroundColor = UIColor.white
+        navbar.delegate = self as? UINavigationBarDelegate
+        
+        let navItem = UINavigationItem()
+        navItem.title = "Sensor Data"
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(dismissViewController))
+        
+        navbar.items = [navItem]
+        
+        view.addSubview(navbar)
+        
+        self.view?.frame = CGRect(x: 0, y: height, width: UIScreen.main.bounds.width, height: (UIScreen.main.bounds.height - height))
+    }
+    
+    @objc private func dismissViewController(){
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     private func initFirestore(){
