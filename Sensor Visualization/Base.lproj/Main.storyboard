@@ -76,7 +76,7 @@
                                 <state key="normal" title="Show Chart"/>
                                 <connections>
                                     <action selector="refreshDataButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaq-dw-1Tf"/>
-                                    <segue destination="JnX-1k-HAx" kind="show" id="DTG-lg-ZDh"/>
+                                    <segue destination="JnX-1k-HAx" kind="showDetail" id="DTG-lg-ZDh"/>
                                 </connections>
                             </button>
                         </subviews>
