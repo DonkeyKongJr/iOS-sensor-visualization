@@ -16,10 +16,6 @@ class SensorDataChartController: UIViewController {
     @IBOutlet weak var lineChart: Chart!
     @IBOutlet weak var humidityChart: Chart!
     
-    @IBAction func backButton(_ sender: UIButton) {
-        self.dismiss(animated: true)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addNavigationBar()

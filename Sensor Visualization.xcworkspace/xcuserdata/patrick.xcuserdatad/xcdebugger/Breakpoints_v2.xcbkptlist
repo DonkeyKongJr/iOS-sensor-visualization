@@ -58,22 +58,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sensor Visualization/SensorDataChartController.swift"
-            timestampString = "552947733.635583"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "backButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sensor Visualization/SensorDataChartController.swift"
             timestampString = "552947733.6358989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
